@@ -184,6 +184,23 @@ p {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .skill,
+  .blog,
+  .education,
+  .work,
+  .project {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+}
 .skill h1,
 .project h1,
 .blog h1,
@@ -206,7 +223,9 @@ footer a,
   font-size: 40px;
 }
 
-.intro center h1 {
+.intro h1,
+p {
+  text-align: center;
   color: #632b49;
 }
 

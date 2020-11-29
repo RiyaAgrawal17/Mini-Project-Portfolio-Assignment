@@ -1,4 +1,5 @@
 import React from "react";
+import Skilldata from "./Profiledata/Skilldata";
 import cpp from "./img/cpp.png";
 import html from "./img/html.png";
 import js from "./img/js.png";
@@ -15,49 +16,19 @@ function Skills(props) {
           <h1>SKILLS</h1>
           <div className="row">
             <div className="column">
-              <img className="photo" alt="html" src={html}></img>
-              <img
-                className="photo"
-                alt="css"
-                src={css}
-                style={{ marginTop: "5px" }}
-              ></img>
-              <img
-                className="photo"
-                alt="js"
-                src={js}
-                style={{ marginTop: "5px" }}
-              ></img>
+             <Skilldata image={html} alt="html" />
+             <Skilldata image={css} alt="css" />
+             <Skilldata image={js} alt="js" />
             </div>
             <div className="column">
-              <img className="photo" alt="mongodb" src={mongoDB}></img>
-              <img
-                className="photo"
-                alt="nodejs"
-                src={nodejs}
-                style={{ marginTop: "5px" }}
-              ></img>
-              <img
-                className="photo"
-                alt="reactjs"
-                src={reactjs}
-                style={{ marginTop: "5px" }}
-              ></img>
+            <Skilldata image={mongoDB} alt="mongodb" />
+             <Skilldata image={nodejs} alt="nodejs" />
+             <Skilldata image={reactjs} alt="react" />
             </div>
             <div className="column">
-              <img className="photo" alt="cpp" src={cpp}></img>
-              <img
-                className="photo"
-                alt="python"
-                src={python}
-                style={{ marginTop: "5px" }}
-              ></img>
-              <img
-                className="photo"
-                alt="msql"
-                src={mysql}
-                style={{ marginTop: "5px" }}
-              ></img>
+            <Skilldata image={cpp} alt="cpp" />
+             <Skilldata image={python} alt="python" />
+             <Skilldata image={mysql} alt="mysql" />
             </div>
           </div>
           </div>
