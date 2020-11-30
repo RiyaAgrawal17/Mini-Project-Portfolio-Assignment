@@ -1,42 +1,29 @@
 import React from "react";
-import Projectdata from "./Profiledata/Projectdata";
-function Project(props){
+import { ProjectList } from "./Profiledata";
+function Project(){
   return (
     <main>
     <div className="project">
     <h1>PROJECTS</h1>
     <div className="row">
-
-      <Projectdata
-       name="Realtime chat-app"
-       link="https://frozen-castle-70414.herokuapp.com/" 
-       description="Web application to send and receive messages from connected
-       browsers to others"
-       />
-
-      <Projectdata
-       name="Keeper App"
-       link="https://t4pr1.csb.app/"
-       description="Web application to add and delete notes."
-        />
-
-      <Projectdata
-       name="Realtime comment system"
-       link="https://immense-oasis-92614.herokuapp.com/"
-       description="Web application to store the comments in the database."
-        />
-   
-      <Projectdata
-       name=" File sharing app"
-       link="https://github.com/RiyaAgrawal17/share"
-       description="Web application to share a file by uploading it and then sharing
-       the link. Direct e-mail sending option is also there."
-        />
-      
+      {
+    ProjectList.map(project=>{
+      const {link,description,name} = project;
+      return (
+    <div className="column">
+      <h3>{name}
+        <a href={link}>(Check here)</a>
+      </h3>
+      <p>{description}</p>
+      <br />
+      </div>
+      )
+    })
+  }
     </div>
-  </div>
+   </div>
   </main>
-  )
-};
+)
+  };
 
 export default Project;
