@@ -1,14 +1,23 @@
 import React from "react";
-import my from "./img/my.jpg";
+import { ProfileList } from "./Profiledata";
 
-function Profile(props) {
+function Profile() {
   return (
     <main>
+      <div>
+        {
+    ProfileList.map(data=>{
+      const {alt,image,name,profile} = data;
+      return (
       <center>
-        <img className="photo" alt="my" src={my}></img>
-        <h1>Riya Agrawal</h1>
-        <h2>Aspiring Software Engineer | Freelancer</h2>
+        <img className="photo" alt={alt} src={image}></img>
+        <h1>{name}</h1>
+        <h2>{profile}</h2>
       </center>
+      )
+    })
+  }
+      </div>
     </main>
   );
 }

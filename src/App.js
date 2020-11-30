@@ -7,11 +7,13 @@ import Project from "./Components/Project";
 import Blog from "./Components/Blog";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
+import Intro from "./Components/Intro";
 function App() {
   return (
     <div className="App">
       <Header />
       <Profile />
+      <Intro />
       <About />
       <Skills />
       <Project />

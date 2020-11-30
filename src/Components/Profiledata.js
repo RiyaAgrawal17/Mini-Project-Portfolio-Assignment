@@ -1,15 +1,37 @@
-import cpp from "./img/cpp.png";
-import html from "./img/html.png";
-import js from "./img/js.png";
-import mongoDB from "./img/mongoDB.png";
-import reactjs from "./img/reactjs.png";
-import nodejs from "./img/nodejs.png";
-import mysql from "./img/mysql.jpg";
-import python from "./img/python.png";
-import css from "./img/css.png";
-import btech from "./img/btech.jpg";
-import twelve from "./img/12th.jpg";
-import ten from "./img/10th.jpg";
+import cpp from "../img/cpp.png";
+import html from "../img/html.png";
+import js from "../img/js.png";
+import mongoDB from "../img/mongoDB.png";
+import reactjs from "../img/reactjs.png";
+import nodejs from "../img/nodejs.png";
+import mysql from "../img/mysql.jpg";
+import python from "../img/python.png";
+import css from "../img/css.png";
+import btech from "../img/btech.jpg";
+import twelve from "../img/12th.jpg";
+import ten from "../img/10th.jpg";
+import my from "../img/my.jpg";
+
+export const ProfileList = [
+  {
+    name: "Riya Agrawal",
+    profile: "Aspiring Software Engineer | Freelancer",
+    image: my,
+    alt: "myphoto"
+  }
+]
+
+export const IntroList = [
+  {
+     intro: "I am a final year undergraduate student from Information Technology department of Muzaffarpur Institute of Technology.Basically I have interest in the field of Full Stack Development. But I have some knowledge related to machine learning concepts also. Generally, I work on web projects using MERN stack but I have done few projects using PHP and MySQL also. I am interested in competitive programming also."
+  }
+]
+
+export const FooterList = [
+  {
+    link: "https://twitter.com/RiyaAgr02106010"
+  }
+]
 
 export const ProjectList = [
   {

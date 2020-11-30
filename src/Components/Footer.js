@@ -1,14 +1,19 @@
 import React from "react";
-
+import { FooterList } from "./Profiledata";
 function Footer(props) {
   return (
     <footer>
       <hr />
       <center>
-        <h3 style={{ marginTop: "10px" }}>
-          Follow me on 
-          <a href="https://twitter.com/RiyaAgr02106010">Twitter</a>
-        </h3>
+        {FooterList.map((data) => {
+          const { link } = data;
+          return (
+            <h3 style={{ marginTop: "10px" }}>
+              Follow me on
+              <a href={link}>Twitter</a>
+            </h3>
+          );
+        })}
       </center>
       <br />
     </footer>
